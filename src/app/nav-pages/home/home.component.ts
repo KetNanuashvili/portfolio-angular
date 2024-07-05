@@ -13,6 +13,6 @@ constructor(private titleService:Title, private projectsService: ProjectsService
   this.titleService.setTitle('Ketevan Nanuashvili- Home');
 }
   ngOnInit(): void {
-    this.featureProject=this.projectsService.getProjectById(0);
+    this.featureProject=this.projectsService.getProjectById(5);
   }
 }
