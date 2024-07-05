@@ -16,6 +16,8 @@ import {CarouselModule} from 'ngx-bootstrap/carousel';
 import {CollapseModule} from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,9 @@ import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
     FormsModule,
-    BrowserAnimationsModule 
+    BrowserAnimationsModule ,
+    AccordionModule.forRoot(),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
