@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <!-- about me -->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../../assets/myimg.jpg" alt="myimage" height="256px" width="256px" class="rounded-circle">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+        <!-- Featured Project -->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featureProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featureProject.pictures">
+                    <slide>
+                        <img src={{picture}} alt="slide" style="display: block; width:100%; height: 400px; ">
+                    </slide>
+                </div>
+            </carousel>
+            <p class="mt-2">{{featureProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>
